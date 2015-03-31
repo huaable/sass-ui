@@ -1,0 +1,19 @@
+@mixin btn-combine($name, $brand-color) {
+
+  .btn-combine-#{$name} .btn {
+    border-top: 1px solid $brand-color;
+    border-right: 1px solid $brand-color;
+    border-bottom: 1px solid $brand-color;
+    background-color: #fff;
+    color: $brand-color !important;
+  }
+
+  .btn-combine-#{$name} .btn:first-child {
+    border-left: 1px solid $brand-color;
+  }
+
+  .btn-combine-#{$name} .btn.active {
+    background-color: $brand-color;
+    color: #FFF !important;
+  }
+}

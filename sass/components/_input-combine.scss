@@ -1,0 +1,83 @@
+$input-combine-radius: $border-radius-base;
+$input-combine-border-color: $border-color-base;
+
+.input-combine {
+  display: table;
+  width: 100%;
+  border: 1px solid $input-combine-border-color;
+  @include border-top-radius($input-combine-radius);
+  @include border-bottom-radius($input-combine-radius);
+  background-color: #fff;
+  line-height: 1;
+  @include user-select(none);
+
+}
+
+.input-combine .input-addon {
+  width: 1%;
+  white-space: nowrap;
+  @include box-sizing(border-box);
+}
+
+.input-combine .input-addon,
+.input-combine .combine-control{
+  display: table-cell;
+  padding: 11px .5em;
+  vertical-align: middle;
+  height: 44px;
+
+}
+
+.input-combine .combine-control{
+  font-size: 100%;
+  //  -webkit-appearance: div;
+  width: 100%;
+  outline: none;
+  border: 0;
+  @include placeholder(#999);
+  @include box-sizing(border-box);
+  @include border-top-radius($input-combine-radius);
+  @include border-bottom-radius($input-combine-radius);
+  color: $text-color;
+}
+
+.input-combine .input-addon:first-child {
+  padding-left: .5em;
+  padding-right: .25em;
+}
+
+.input-combine .input-addon:last-child {
+  padding-left: .25em;
+  padding-right: .5em;
+}
+
+.input-combine .combine-control:not(:first-child) {
+  padding-left: .25em;
+}
+
+.input-combine .combine-control:not(:last-child) {
+  padding-right: .25em;
+}
+
+.input-combine textarea.combine-control{
+  resize: none;
+  height: auto;
+}
+.input-combine-list {
+  @include border-top-radius($input-combine-radius);
+  @include border-bottom-radius($input-combine-radius);
+}
+
+.input-combine-list .input-combine {
+  @include border-top-radius(0);
+  @include border-bottom-radius(0);
+  margin-top: -1px;
+}
+
+.input-combine-list .input-combine:first-child {
+  @include border-top-radius($input-combine-radius);
+}
+
+.input-combine-list .input-combine:last-child {
+  @include border-bottom-radius($input-combine-radius);
+}

@@ -1,0 +1,61 @@
+$select-radius: $border-radius-base;
+.select,
+.select select,
+.select option {
+  font-size: 100%;
+  vertical-align: middle;
+  outline: 0 none;
+  -webkit-appearance: none;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  border: 0;
+  background-color: #fff;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  border-radius: $select-radius;
+  background-color: #eee;
+  padding: 0 20px 0px 5px;
+  line-height: 150%;
+}
+
+.select select {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+}
+
+.select:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 0px solid #999;
+  border-left: 0px solid #999;
+  @include rotate(-45deg);
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+.select:after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 0px solid #999;
+  border-right: 0px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  @include rotate(-45deg);
+  position: absolute;
+  right: 7px;
+  bottom: 50%;
+  margin-bottom: -4px;
+}

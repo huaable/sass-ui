@@ -1,0 +1,54 @@
+.checkbox input[type='checkbox'] {
+  display: none;
+}
+.checkbox{
+}
+.checkbox input[type='checkbox'] + i {
+  display: block;
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ddd;
+}
+
+.checkbox input[type='checkbox']:checked + i {
+  border: 1px solid $brand-success;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.checkbox input[type='checkbox']:checked + i:after {
+  content: '';
+  height: 100%;
+  width: 60%;
+  display: block;
+  border-style: solid;
+  border-color: $brand-success;
+  border-top-width: 0;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 0;
+  position: absolute;
+  left: .2em;
+  bottom: .1em;
+  @include rotate(40deg);
+}
+
+@mixin checkbox($name, $color) {
+
+  .checkbox-#{$name} input[type='checkbox']:checked + i {
+    border: 1px solid $brand-success;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+  }
+  .checkbox-#{$name} input[type='checkbox']:checked + i:after {
+    border-color: $color;
+  }
+}
+
+@include checkbox(primary, $brand-primary);
+@include checkbox(danger, $brand-danger);
+@include checkbox(success, $brand-success);
+@include checkbox(info, $brand-info);
+@include checkbox(warning, $brand-warning);
