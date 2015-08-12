@@ -1,0 +1,54 @@
+
+//.list-messages
+.list-messages {
+
+  list-style: none;
+  cursor: pointer;
+  @include user-select(none);
+  > .item {
+    background: #fff;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    overflow: hidden;
+    zoom: 1;
+    &:not(:first-child) {
+      border-top: 1px solid $border-color-base;
+    }
+    .icon {
+      display: block;
+      @include size(48px, 48px);
+      //      @include icon($message-icon-size);
+      margin-right: 10px;
+      float: left;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-color: #ddd;
+    }
+    .name {
+      @include text-overflow;
+      line-height: 26px;
+      font-size: 16px;
+      color: $text-color;
+      margin-right: 60px;
+    }
+    .content {
+      @include text-overflow;
+      line-height: 22px;
+      font-size: 14px;
+      color: $text-muted;
+      margin-right: 40px;
+    }
+    .time {
+      @include text-overflow;
+      font-size: 12px;
+      color: #bbb;
+      line-height: 20px;
+      float: right;
+    }
+  }
+  > .item:active {
+    background-color: #eee;
+  }
+}

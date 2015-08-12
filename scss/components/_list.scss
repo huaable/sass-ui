@@ -1,0 +1,35 @@
+.list {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  zoom: 1;
+  margin: $padding-base-vertical 0;
+
+}
+
+.list .item {
+  border-top: 1px solid #ddd;
+  padding: 12px 12px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  color: $text-color;
+  margin: 0;
+  text-decoration: none;
+}
+
+.list .item:first-child {
+  border-top: 0;
+}
+
+.list .item-title {
+  display: block;
+  //  background-color: transparent;
+  background-color: #f4f4f4;
+  color: $text-color;
+  padding: $padding-base-vertical $padding-base-horizontal;
+}
+
+.item-title + .item {
+  border-top: 0;
+}

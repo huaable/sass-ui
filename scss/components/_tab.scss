@@ -1,0 +1,7 @@
+.js-tab .tab-body .tab-item {
+  display: none;
+}
+
+.js-tab .tab-body .tab-item.active {
+  display: block;
+}

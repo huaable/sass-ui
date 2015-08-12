@@ -1,0 +1,90 @@
+//.content-container {
+//  padding: 7px;
+//}
+//
+.btn-group-row {
+  width: 100%;
+  background-color: #fff;
+  display: table;
+  border-collapse: collapse;
+
+}
+
+//
+.btn-group-row .btn:first-child {
+  border-radius: $border-radius-base 0 0 $border-radius-base;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.btn-group-row > .btn {
+  border-radius: 0;
+  border-left-width: 0;
+  width: 10%;
+  display: table-cell;
+}
+
+.btn-group-row .btn:last-child {
+  border-radius: 0 $border-radius-base $border-radius-base 0;
+}
+
+//
+//.btn:active {
+//  background: rgba(0, 122, 255, .15);
+//}
+//
+.btn-group-row .btn.active {
+  background: $brand-primary !important;
+  color: #fff;
+}
+
+.btn-group-sm .btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+
+.btn-group-lg .btn {
+  font-size: 18px;
+}
+
+@mixin btn-group($color) {
+
+  & .btn,
+  & a.btn {
+    border-color: $color;
+    color: $color;
+  }
+
+  & .btn.active,
+  & a.btn.active {
+    background-color: $color !important;
+    color: #fff;
+  }
+
+  & .btn:active,
+  & a.btn:active {
+    background-color: transparentize($color, .9);
+  }
+
+}
+
+.btn-group-default {
+  @include btn-group(#aaa);
+}
+
+.btn-group-primary {
+  @include btn-group($brand-primary);
+}
+
+.btn-group-danger {
+  @include btn-group($brand-danger);
+}
+
+.btn-group-success {
+  @include btn-group($brand-success);
+}
+
+.btn-group-info {
+  @include btn-group($brand-info);
+}

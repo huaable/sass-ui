@@ -1,0 +1,103 @@
+//html, body {
+//  position: relative;
+//  height: 100%;
+//}
+
+body *::-webkit-scrollbar {
+  display: none;
+}
+
+.view-content {
+  //  border-top: 1px solid transparent;
+  //  border-bottom: 1px solid transparent;
+}
+
+.bar-header {
+  //  position: fixed;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.bar-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  //  border-top: 1px solid $border-color-base;
+  z-index: 1;
+
+}
+
+.has-header {
+  margin-top: 45px;
+}
+
+.has-footer {
+  padding-bottom: 50px;
+}
+
+//------------------------------------------
+.bar-header {
+  display: table;
+}
+
+.bar-header .nav-item {
+  display: table-cell;
+  width: 1%;
+  padding: $padding-base-vertical $padding-base-horizontal;
+}
+
+//------------------------------------------
+.abs-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.abs-view .bar-header {
+  position: absolute;
+}
+
+.abs-view .bar-footer {
+  position: absolute;
+}
+
+.abs-view .view-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+}
+
+.abs-view .has-header {
+  margin: 0;
+  padding: 0;
+  top: 45px;
+}
+
+.abs-view .has-footer {
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+//---------------------------------------
+.bar-header .nav-bar,
+.bar-footer .nav-bar {
+  height: 100%;
+}
+
+@media screen and (max-height: 360px) {
+  .bar-footer {
+    display: none;
+  }
+}

@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/scss-ui.css"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+<style>
+    html, body {
+        background-color: #f4f4f4;
+    }
+</style>
+<div class="bar-header affix">
+    <div class="nav-bar nav-bar-primary">
+        <h1 class="item title text-left">导航</h1>
+        <a href="javascript:;" class="item no-padding"><i style="width: 45px;" class="fa fa-search"></i></a>
+        <a href="javascript:;" class="item no-padding"><i style="width: 45px;" class="fa fa-cog"></i></a>
+    </div>
+</div>
+<div class="view-content has-header has-footer">
+
+<ul class="list no-margin-top">
+    <a class="item item-input" href="http://fortawesome.github.io/Font-Awesome/icons/">
+                <span class="content text-primary">
+                    字体图标 fontawesome
+                </span>
+        <span class="addon"></span>
+    </a>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.un-select</code>
+                </span>
+        <span class="addon">禁止文本选择</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code class="shadow">.shadow</code>
+                    <code>.no-shadow</code>
+                </span>
+        <span class="addon">阴影</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code class="underline">.underline</code>
+                </span>
+        <span class="addon">下划线</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.block</code>
+                    <code>.inline</code>
+                    <code>.inline-block</code>
+                </span>
+        <span class="addon">行块级</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.vertical-top</code>
+                    <code>.vertical-middle</code>
+                    <code>.vertical-bottom</code>
+                </span>
+        <span class="addon">垂直对齐</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.padding</code>
+                    <code>.no-padding</code>
+                    <code>.no-padding-top</code>
+                    <code>.no-padding-right</code>
+                    <code>.no-padding-bottom</code>
+                    <code>.no-padding-left</code>
+                </span>
+        <span class="addon">内边距</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.margin</code>
+                    <code>.no-margin</code>
+                    <code>.no-margin-top</code>
+                    <code>.no-margin-right</code>
+                    <code>.no-margin-bottom</code>
+                    <code>.no-margin-left</code>
+                </span>
+        <span class="addon">外边距</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.border</code>
+                    <code>.border-top</code>
+                    <code>.border-right</code>
+                    <code>.border-bottom</code>
+                    <code>.border-left</code>
+                    <code>.no-border</code>
+                    <code>.no-border-top</code>
+                    <code>.no-border-right</code>
+                    <code>.no-border-bottom</code>
+                    <code>.no-border-left</code>
+                </span>
+        <span class="addon">边框</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.radius</code>
+                    <code>.no-radius</code>
+                    <code>.radius-top</code>
+                    <code>.radius-right</code>
+                    <code>.radius-bottom</code>
+                    <code>.radius-left</code>
+                    <code>.no-radius-top</code>
+                    <code>.no-radius-right</code>
+                    <code>.no-radius-bottom</code>
+                    <code>.no-radius-left</code>
+                </span>
+        <span class="addon">圆角</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.w-5</code>
+                    <code>.w-10</code>
+                    <code>...</code>
+                    <code>.w-50</code>
+                </span>
+        <span class="addon">宽度</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.hr-5</code>
+                    <code>.hr-10</code>
+                    <code>...</code>
+                    <code>.hr-50</code>
+                </span>
+        <span class="addon">高度</span>
+    </li>
+    <li class="item item-input has-touch-bg">
+                <span class="content">
+                    <code>.has-touch-bg</code>
+                </span>
+        <span class="addon">按下效果</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.img-responsive</code>
+                </span>
+        <span class="addon">响应式宽度图片</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.img-circle</code>
+                </span>
+        <span class="addon">图片圆角</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.bg-cover</code>
+                    <code>.bg-contain</code>
+                </span>
+        <span class="addon">背景</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.clearfix</code>
+                    <code>.overflow</code>
+                    <code>.pull-left</code>
+                    <code>.pull-right</code>
+                    <code>.center-block</code>
+                </span>
+        <span class="addon">浮动</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <code>.hide</code>
+                    <code>.hidden</code>
+                    <code>.invisible 占位隐藏</code>
+                    <code>.pull-right</code>
+                    <code>.center-block</code>
+                </span>
+        <span class="addon">可见</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <span class="text-muted">.text-muted</span>
+                    <span class="text-primary">.text-primary</span>
+                    <span class="text-success">.text-success</span>
+                    <span class="text-danger">.text-danger</span>
+                    <span class="text-warning">.text-warning</span>
+                    <span class="text-info">.text-info</span>
+                    <code>.text-left</code>
+                    <code>.text-center</code>
+                    <code>.text-right</code>
+                    <code>.text-lowercase 字母小写</code>
+                    <code>.text-uppercase 字母大写</code>
+                    <code>.text-capitalize 首字母大写</code>
+                    <code>.text-nowrap 不换行</code>
+                    <code>.text-overflow 超出隐藏</code>
+                    <del class="text-danger">删除</del>
+                </span>
+        <span class="addon vertical-top">文本</span>
+    </li>
+    <li class="item item-input">
+                <span class="content">
+                    <h1>.h1</h1>
+                    <h2>.h2</h2>
+                    <h3>.h3</h3>
+                    <h4>.h4</h4>
+                    <h5>.h5</h5>
+                    <h6>.h6</h6>
+                    <p>段落段落段落</p>
+                    <p>段落段落段落</p>
+                    <p>段落段落段落</p>
+                    <a href="#">链接文本</a>
+                </span>
+        <span class="addon vertical-top">排版</span>
+    </li>
+</ul>
+<div class="padding">
+    <span class="label label-default">.label-default</span>
+    <span class="label label-primary">.label-primary</span>
+    <span class="label label-success">.label-success</span>
+    <span class="label label-danger">.label-danger</span>
+    <span class="label label-warning">.label-warning</span>
+    <span class="label label-info">.label-info</span>
+</div>
+
+
+<div class="padding">
+    <p>
+        <code>栅格布局</code>
+        <br/>
+        <code> .row > .col-xs-6</code>
+    </p>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <button class="btn btn-block btn-primary">保存</button>
+        </div>
+        <div class="col-xs-6">
+            <button class="btn btn-block btn-danger">删除</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="padding ">
+
+    <p><code> .row > .col-xs-6.col-xs-offset-3</code></p>
+
+    <div class="row">
+        <button class="btn col-xs-6 col-xs-offset-3 btn-primary">提交</button>
+    </div>
+</div>
+
+
+<div class="padding">
+    <hr/>
+
+    <p><code>.btn-lg</code></p>
+    <button class="btn btn-block btn-primary btn-lg">button</button>
+
+    <p><code>.btn-sm</code></p>
+    <button class="btn btn-block btn-primary btn-sm">button</button>
+
+    <p><code>.btn-xs</code></p>
+    <button class="btn btn-block btn-primary btn-xs">button</button>
+    <hr>
+
+    <p><code>.btn-group-row > .btn</code></p>
+
+    <div class="btn-group-row btn-group-primary">
+        <span class="btn active">Left</span>
+        <span class="btn ">Middle</span>
+        <span class="btn ">Right</span>
+    </div>
+
+</div>
+
+<div class="padding">
+    <p><code>.list > .item</code></p>
+</div>
+
+<ul class="list">
+    <li class="item item-title">标题</li>
+    <li class="item">.list>.item</li>
+    <li class="item">.list>.item</li>
+    <li class="item">.list>.item</li>
+</ul>
+
+<div class="padding">
+    <p><code>.list.list-indent > .item</code>
+</div>
+<ul class="list list-indent">
+    <li class="item-title">标题</li>
+    <li class="item">.list.list-indent > .item</li>
+    <li class="item">.list.list-indent > .item</li>
+</ul>
+
+
+<div class="padding">
+    <p><code>.list.list-indent-both > .item</code>
+</div>
+<ul class="list list-indent-both">
+    <li class="item-title">标题</li>
+    <li class="item">.list.list-indent-both > .item</li>
+    <li class="item">.list.list-indent-both > .item</li>
+</ul>
+
+<div class="padding">
+    <p><code>.list.list-inset > .item</code>
+
+    <p><code>.list > .item.item-input</code>
+</div>
+<ul class="list list-inset">
+    <label class="item item-input">
+        <input class="content" type="text" placeholder=".list > .item.item-input"/>
+    </label>
+    <label class="item item-input">
+        <span class="addon">价格</span>
+        <input class="content" type="text" placeholder="请输入价格"/>
+        <span class="addon">元</span>
+    </label>
+    <label class="item item-input">
+        <span class="addon">选项</span>
+        <select class="content">
+            <option value="">选项1</option>
+            <option value="">选项2</option>
+            <option value="">选项3</option>
+        </select>
+        <span class="addon"><i class="fa fa-angle-down"></i></span>
+    </label>
+    <label class="item item-input">
+        <span class="addon vertical-top">备注</span>
+        <textarea class="content" placeholder="请输入备注" rows="3"></textarea>
+    </label>
+</ul>
+
+<ul class="list list-inset">
+    <label class="item item-input has-touch-bg">
+        <div class="content">选项</div>
+        <span class="addon">
+            <input type="radio" name="radio" style="display: none"/>
+            <i class="checked-icon fa fa-check-circle text-primary"></i>
+            <i class="no-checked-icon fa fa-circle-thin text-primary"></i>        </span>
+    </label>
+    <label class="item item-input has-touch-bg">
+        <div class="content">选项</div>
+        <span class="addon">
+            <input type="radio" name="radio" style="display: none"/>
+            <i class="checked-icon fa fa-check-circle text-primary"></i>
+            <i class="no-checked-icon fa fa-circle-thin text-primary"></i>        </span>
+    </label>
+    <label class="item item-input has-touch-bg">
+        <div class="content">选项</div>
+        <span class="addon">
+            <input type="checkbox" name="checkbox" style="display: none"/>
+            <i class="checked-icon fa fa-check-square text-primary"></i>
+            <i class="no-checked-icon fa fa-square-o text-primary"></i>
+        </span>
+    </label>
+    <label class="item item-input has-touch-bg">
+        <div class="content">选项</div>
+        <span class="addon">
+            <input type="checkbox" name="checkbox" style="display: none"/>
+            <i class="checked-icon fa fa-check-square text-primary"></i>
+            <i class="no-checked-icon fa fa-square-o text-primary"></i>
+        </span>
+    </label>
+    <label class="item item-input">
+        <div class="content">选项</div>
+        <span class="addon no-padding-top no-padding-bottom fa-2x">
+            <input type="checkbox" name="checkbox" style="display: none"/>
+            <i class="checked-icon fa fa-toggle-on text-primary"></i>
+            <i class="no-checked-icon fa fa-toggle-off text-muted"></i>
+        </span>
+    </label>
+    <label class="item item-input has-touch-bg">
+        <div class="content">选项</div>
+        <span class="addon">
+            <i class="fa fa-angle-right text-muted"></i>
+        </span>
+    </label>
+</ul>
+<div class="padding">
+    <button class="btn btn-block btn-primary">提交表单</button>
+</div>
+<div class="card">
+
+    <div class="content-block bg-warning">
+        <p><strong>温馨提示:</strong></p>
+
+        <p>1.请认真填写个人信息</p>
+
+        <p>2.请认真填写个人信息</p>
+
+        <p><code>.content-block</code></p>
+    </div>
+
+    <div class="padding">
+        <p><strong>温馨提示:</strong></p>
+
+        <p>1.请认真填写个人信息</p>
+
+        <p>2.请认真填写个人信息</p>
+
+        <p><code>.padding</code></p>
+    </div>
+</div>
+
+<div class="padding">
+    <p><code>.nav-bar.nav-bar-danger > .item</code>
+</div>
+<div class="nav-bar nav-bar-danger">
+    <b class="item title">.nav-bar</b>
+    <a class="item">历史记录</a>
+    <a class="item">设置</a>
+</div>
+
+
+<div class="padding">
+    <p><code>.card</code>
+</div>
+<div class="card">
+    <div class="padding">
+        <p>this is a card</p>
+
+        <p>this is a card</p>
+
+        <p>this is a card</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="padding">
+        <p>this is a card</p>
+
+        <p>this is a card</p>
+
+        <p>this is a card</p>
+    </div>
+</div>
+
+<div class="card">
+    <ul class="list list-indent-both">
+        <li class="item">.list.list-indent-both > .item</li>
+        <li class="item">.list.list-indent-both > .item</li>
+        <li class="item">.list.list-indent-both > .item</li>
+    </ul>
+</div>
+
+
+<div class="padding">
+    <p><code>.list.list-messages</code>
+</div>
+<ul class="list list-messages">
+    <a class="item">
+        <div class="time">周一</div>
+        <span class="icon" style="background-image: url(images/demo.png)"></span>
+
+        <div class="name">Jack</div>
+        <div class="content">最近还好吗?</div>
+    </a>
+    <a class="item">
+        <div class="time">周一</div>
+        <img src="images/demo.png" class="icon">
+
+        <div class="name">李小明</div>
+        <div class="content">晚上聚餐,有空的话请回个话,开始报名.</div>
+    </a>
+</ul>
+
+
+<div class="padding">
+    <p><code>.article</code>
+</div>
+<div class="article">
+    <div class="title">Bootstrap</div>
+    <div class="time">2015-08-08</div>
+    <div class="author">admin</div>
+    <div class="content">
+        <p>
+            Bootstrap （当前版本 v3.3.5）提供以下几种方式帮你快速上手，每一种方式针对具有不同技能等级的开发者和不同的使用场景。继续阅读下面的内容，看看哪种方式适合你的需求吧。 </p>
+
+        <p>
+            <img src="images/article-thumb.png" alt=""/>
+        </p>
+
+        <p>
+            sass有两种后缀名文件：一种后缀名为sass，不使用大括号和分号；另一种就是我们这里使用的scss文件，这种和我们平时写的css文件格式差不多，使用大括号和分号。
+        </p>
+    </div>
+</div>
+
+
+<div class="js-tab">
+    <div class="margin">
+        <div class="tab-heading btn-group-row btn-group-primary">
+            <div class="tab-item btn active">Left</div>
+            <div class=" tab-item btn ">Middle</div>
+            <div class="tab-item btn ">Right</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="tab-body padding">
+            <div class="tab-item active">
+                1
+                <p>
+                    <code>.js-tab tab-heading>.tab-item</code>
+
+                <p>
+                    <code>.js-tab tab-body>.tab-item</code>
+            </div>
+            <div class="tab-item">
+                2
+                <p>
+                    <code>.js-tab tab-heading>.tab-item</code>
+
+                <p>
+                    <code>.js-tab tab-body>.tab-item</code>
+
+            </div>
+            <div class="tab-item">
+
+                3
+                <p>
+                    <code>.js-tab tab-heading>.tab-item</code>
+
+                <p>
+                    <code>.js-tab tab-body>.tab-item</code>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<div class="grid-view">
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-calculator "></i>
+            </p>
+
+            <p>calc</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-share-alt "></i>
+            </p>
+
+            <p>share</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-search "></i>
+            </p>
+
+            <p>search</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-map-marker"></i>
+            </p>
+
+            <p>map</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-book "></i>
+            </p>
+
+            <p>book</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-cogs"></i>
+            </p>
+
+            <p>cogs</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-dollar"></i>
+            </p>
+
+            <p>dollar</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-star-half-empty"></i>
+            </p>
+
+            <p>star-half</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-car"></i>
+            </p>
+
+            <p>car</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-gamepad"></i>
+            </p>
+
+            <p>gamepad</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-fire"></i>
+            </p>
+
+            <p>fire</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-home"></i>
+            </p>
+
+            <p>home</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-lightbulb-o"></i>
+            </p>
+
+            <p>lightbulb</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-warning"></i>
+            </p>
+
+            <p>warning</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-info-circle"></i>
+            </p>
+
+            <p>info</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-shopping-cart"></i>
+            </p>
+
+            <p>shopping</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-comments"></i>
+            </p>
+
+            <p>comments</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-envelope"></i>
+            </p>
+
+            <p>envelope</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-gift"></i>
+            </p>
+
+            <p>gift</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-magic"></i>
+            </p>
+
+            <p>magic</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-wrench"></i>
+            </p>
+
+            <p>wrench</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-newspaper-o"></i>
+            </p>
+
+            <p>newspaper</p>
+        </div>
+    </div>
+</a>
+<a class="cell">
+    <div class="cell-content">
+        <div class="content">
+            <p>
+                <i class="fa fa-ellipsis-h"></i>
+            </p>
+
+            <p>more</p>
+        </div>
+    </div>
+</a>
+</div>
+
+<hr/>
+<div class="padding">
+    <h1>Bootstrap</h1>
+</div>
+<div class="padding">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-block btn-primary " data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+    <button class="btn btn-block btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">Button with data-target
+    </button>
+    <div class="collapse" id="collapseExample">
+        <div class="well">
+            隐藏的内容
+        </div>
+    </div>
+    <hr/>
+    <a href="javascript:;">Inbox <span class="badge">42</span></a>
+
+    <button class="btn btn-primary" type="button">
+        Messages <span class="badge">4</span>
+    </button>
+    <nav>
+        <ul class="pager">
+            <li><a href="javascript:;">Previous</a></li>
+            <li><a href="javascript:;">Next</a></li>
+        </ul>
+    </nav>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="40"
+             aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+        </div>
+    </div>
+
+    <div class="card no-margin-left no-margin-right">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>字段</th>
+                <th>字段</th>
+                <th>字段</th>
+                <th>字段</th>
+            </tr>
+            <tr>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+            </tr>
+            <tr>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+            </tr>
+            <tr>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+            </tr>
+            <tr>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+                <td>字段值</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+<div class="bar-footer ">
+    <div class="nav-bar nav-bar-primary">
+        <a href="javascript:;" class="item active">导航</a>
+        <a href="javascript:;" class="item">导航</a>
+        <a href="javascript:;" class="item">导航</a>
+        <a href="javascript:;" class="item">导航</a>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/sea-ui.js"></script>
+</body>
+</html>
+
+<script>
+
+    /*.abs-view 需要设置下面的css*/
+    //将导航内容用absolute定位
+    //.view-content 内容滚动条用css隐藏
+    //.view-content overflow:scroll
+    /*
+     html, body {
+     position: relative;
+     height: 100%;
+     }
+     */
+    function absview() {
+        $('html,body').css({
+            'position': 'relative',
+            'height': '100%'
+        });
+        $("body").addClass("abs-view")
+    }
+    //absview();
+
+</script>
