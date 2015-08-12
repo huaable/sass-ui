@@ -16,7 +16,6 @@
     .icon {
       display: block;
       @include size(48px, 48px);
-      //      @include icon($message-icon-size);
       margin-right: 10px;
       float: left;
       background-position: center;
